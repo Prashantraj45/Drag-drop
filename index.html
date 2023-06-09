@@ -9,7 +9,6 @@
 <body>
 
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="imgcon"><img src="./c.jpg" draggable="true" ondragstart="drag(event)" id="drag1" ></div>
         <div class="imgcon"><img src="./c1.jpg" draggable="true" ondragstart="drag(event)" id="drag2" ></div>
         <div class="imgcon"><img src="./c2.jpg" draggable="true" ondragstart="drag(event)" id="drag3" ></div>
         <div class="imgcon"><img src="./c3.jpg" draggable="true" ondragstart="drag(event)" id="drag4" ></div>
@@ -29,7 +28,10 @@
 
         function drag(ev) {
             ev.dataTransfer.setData("text", ev.target.id);
-            
+            var dragIcon = document.createElement('img');
+            dragIcon.src = 'http://...';
+            dragIcon.width = 100;
+            ev.dataTransfer.setDragImage(dragIcon,x,y);
         }
 
         function drop(ev) {

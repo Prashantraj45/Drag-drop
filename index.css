@@ -40,12 +40,9 @@ img{
     justify-content: center;
     padding: 10px;
 }
-@media screen and (max-device-width: 480px)
+@media screen and (max-device-width: 800px)
     and (orientation: portrait) {
-    img{
-        max-width: 360px;
-        max-height: 360px;    
-    }
+    
     #div1,#div2{
         flex-wrap: nowrap;
     }
