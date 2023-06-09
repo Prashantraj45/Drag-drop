@@ -27,11 +27,11 @@
         }
 
         function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
             var dragIcon = document.createElement('img');
             dragIcon.src = "./folder.png";
             dragIcon.width = 100;
             ev.dataTransfer.setDragImage(dragIcon,50,50);
+            ev.dataTransfer.setData("text", ev.target.id);
         }
 
         function drop(ev) {
