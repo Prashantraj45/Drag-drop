@@ -46,4 +46,7 @@ img{
         max-width: 360px;
         max-height: 360px;    
     }
+    #div1,#div2{
+        flex-wrap: nowrap;
+    }
 }
