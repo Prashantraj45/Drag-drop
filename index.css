@@ -14,7 +14,7 @@ img{
 #div1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-grow:1;
     flex-shrink:1;
@@ -26,7 +26,7 @@ img{
 #div2{
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-start;
     flex-wrap: wrap;
     flex-grow:1;
     flex-shrink:1;
