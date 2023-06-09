@@ -33,6 +33,7 @@ img{
     flex-basis: 50%;
     border: 5px solid black;
     height: auto;
+    padding-top: 10px;
 
 }
 .imgcon{
@@ -43,8 +44,8 @@ img{
 @media screen and (max-device-width: 800px)
     and (orientation: portrait) {
     img{
-        max-width: 180px;
-        max-height: 180px;    
+        max-width: 250px;
+        max-height: 250px;    
     }
     #div1,#div2{
         flex-wrap: nowrap;
