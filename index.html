@@ -29,9 +29,9 @@
         function drag(ev) {
             ev.dataTransfer.setData("text", ev.target.id);
             var dragIcon = document.createElement('img');
-            dragIcon.src = 'http://...';
+            dragIcon.src = "./c.jpg";
             dragIcon.width = 100;
-            ev.dataTransfer.setDragImage(dragIcon,x,y);
+            ev.dataTransfer.setDragImage(dragIcon,50,50);
         }
 
         function drop(ev) {

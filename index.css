@@ -42,7 +42,10 @@ img{
 }
 @media screen and (max-device-width: 800px)
     and (orientation: portrait) {
-    
+    img{
+        max-width: 250px;
+        max-height: 250px;    
+    }
     #div1,#div2{
         flex-wrap: nowrap;
     }
